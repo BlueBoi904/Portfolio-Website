@@ -24,42 +24,42 @@ $background-opacity: 0.9;
                 height: 100%;
                 z-index: -1;
                 background: rgba($primary-color, $background-opacity);
-
             }
         }
+    }
+}
 
+// Set Text Color
+@function set-text-color($color) {
+    @if (lightness($color) > 40) {
+        @return #000;
+    }
 
+    @else {
+        @return #fff;
     }
 }
 
 // Media Query Mixins
 @mixin mediaSm {
-
-    // Any thing in here will only if the screen is 500px or less
     @media screen and (max-width: 500px) {
         @content;
     }
 }
 
 @mixin mediaMd {
-
-    // Any thing in here will only if the screen is 768px or less
     @media screen and (max-width: 768px) {
         @content;
     }
 }
 
 @mixin mediaLg {
-
-    // Any thing in here will only if the screen is 769px to 1170px
     @media screen and (min-width: 769px) and (max-width: 1170px) {
         @content;
     }
 }
 
 @mixin mediaXl {
-
-    // Any thing in here will only if the screen is 1171px or more
     @media screen and (min-width: 1171px) {
         @content;
     }
