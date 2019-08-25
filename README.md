@@ -4,13 +4,14 @@ Dynamic portfolio website that displays my projects and contact info.
 
 # Technologies Used
 
-- CSS/SASS
+- CSS Transitions/Grid/Flex
+- SASS 
 - Javascript
 - HTML
 
 # What I've Learned
 
-- Dynamic web styling
+- Advanced web styling techniques using CSS Transitions, Flex, and Grid 
 - How to optimize build for mobile devices
 - Creating and properly utilizing mixins
 
